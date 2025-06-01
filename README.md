@@ -19,5 +19,4 @@ Genera n = np.arange(N) de modo que tₙ = n·Tₛ cubra el mismo intervalo.
 Calcula x_disc = x(tₙ).
 Superpone los puntos muestreados sobre la gráfica continua
 
-Al operar main se debe de obtener las graficas continua y discreta de la señal a graficar antes de ver las graficas montadas ya que
-se obtienen los datos de las dos graficas anteriores para obtener la montada
+Con el main se grafican las 12 graficas al mismo tiempo espero encontrar la manera de que se grafiquen cada una por separado para la siguiente actividad tener mas ordenado el main
