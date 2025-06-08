@@ -16,8 +16,8 @@ def main(options):
             understanding_freq(options[2])
 
         else:
-            print("Please give a frequency. Example: python main.py T_2 2")
-
+            print("Please give a frequency. ")
+            print("Example: python main.py T_2 2")
     elif options[1] == "T_3":
         if len(options) > 4:
             freq = float(options[2])
@@ -32,7 +32,8 @@ def main(options):
             dac_bits(options[2])
 
         else:
-            print("Please provide the required argument for T_4")
+            print("Please give a number of bits for T_4")
+            print("Example: python main.py T_4 2")
 if __name__ == '__main__':
     args = sys.argv
     if len(args) > 1:
@@ -42,3 +43,4 @@ if __name__ == '__main__':
         print("Example (run tarea 1): python main.py T_1")
         print("Example (run tarea 2): python main.py T_2 2")
         print("Example (run tarea 3): python main.py T_3 1 1 0")
+        print("Example (run tarea 4): python main.py T_4 4")
