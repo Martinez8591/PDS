@@ -1,22 +1,35 @@
-Graficación de Señales Continuas y Discretas
-1. Señales a graficar:
-x₁(t) = sin(2π·f·t) (Señal sinusoidal de frecuencia f; recomendación utilizar f=2)
-x₂(t) = e^(–2t) · u(t)* (Señal exponencial;  u(t) es la señal escalón unitario: u(t)=1 para t>=0 , u(t)=0 para t<0 )
-x₃(t) = tri(t, f) ( Señal triangular periódica de frecuencia f; se recomienda utilizar f=2)
-x₄(t) = sq(t, f) (Señal cuadrada de frecuencia f; se recomienda utilizar f=2)
+Descripción
+Este proyecto permite generar y analizar diferentes tipos de señales, aplicar la Transformada Discreta de Fourier (DFT) y simular un DAC digital. Se organiza en tareas y prácticas que van desde la creación de señales hasta su análisis en frecuencia.
 
-2. Dominio de tiempo:
-Selecciona t ∈ [–1, 5] s (puedes ajustarlo según la señal).
+Módulos
+1.-Tarea 1 (T_1):** Generación de señales básicas (seno, exponencial, diente de sierra y cuadrada).
+Iniciar.- python main.py T_1
+  
+2.-Tarea 2 (T_2):** Análisis de frecuencia de señales.  
+Iniciar.-python main.py T_2 <frecuencia>
+Ejemplo.-python main.py T_2 2
 
-3. Gráfica de la señal continua
-Usa numpy.linspace con al menos 1000 puntos para generar t.
-Calcula x_cont = x(t).
-Grafica x_cont como línea suave.
 
-4. Muestreo y señal discreta
-Define un periodo de muestreo adecuado (definido heurísticamente, ejemplo: Tₛ = 0.01 s ).
-Genera n = np.arange(N) de modo que tₙ = n·Tₛ cubra el mismo intervalo.
-Calcula x_disc = x(tₙ).
-Superpone los puntos muestreados sobre la gráfica continua
+3.0-Tarea 3 (T_3):** Análisis de frecuencia, amplitud y fase de señales.
+Iniciar.-python main.py T_3 <frecuencia> <amplitud> <fase>
+Ejemplo.-python main.py T_3 1 1 0
 
-Con el main se grafican las 12 graficas al mismo tiempo espero encontrar la manera de que se grafiquen cada una por separado para la siguiente actividad tener mas ordenado el main
+4.-Tarea 4 (T_4):** Simulación de un DAC con diferente número de bits.
+
+Iniciar.-python main.py T_4 <número_de_bits>
+Ejemplo.-python main.py T_4 4
+
+
+5.-DFT P1 (dft_p1):** Aplicación de la Transformada Discreta de Fourier (DFT) sobre señales.
+Iniciar.-python main.py dft_p1
+
+6.-DFT P2 (dft_p2):** Aplicación avanzada de la DFT.  
+Iniciar.-python main.py dft_p2
+
+
+Dependencias
+- Python 3.x  
+- Numpy  
+- Matplotlib  
+
+

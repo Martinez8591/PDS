@@ -3,6 +3,8 @@ from src.tarea_1 import signal_sine, signal_exp, signal_sawtooth, signal_square
 from src.tarea_2 import understanding_freq
 from src.tarea_3 import understanding_faf
 from src.tarea_4 import dac_bits
+from src.DFT_P1  import dft_signal
+from src.DFT_P2  import dft_p2
 
 def main(options):
     if options[1] == "T_1":
@@ -34,6 +36,15 @@ def main(options):
         else:
             print("Please give a number of bits for T_4")
             print("Example: python main.py T_4 2")
+
+    elif options[1] == "dft_p1":
+        if len(args) > 1:
+            dft_signal() 
+
+    elif options[1] == "dft_p2":
+        if len(args) > 1:
+            dft_p2()   
+                      
 if __name__ == '__main__':
     args = sys.argv
     if len(args) > 1:
